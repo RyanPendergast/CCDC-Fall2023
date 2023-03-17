@@ -1,16 +1,3 @@
-#!/bin/bash
-# CentOS Splunk ES iptables rules
-# Supports ICMP, Splunk in
-# Supports DNS, HTTP, HTTPS, ICMP, NTP, Splunk out
-
-# Variables
-AD="172.20.242.200"
-External="172.25.22.0/24"
-Inside="172.20.240.0/22"
-PAPublic="172.20.241.254"
-Phantom="172.20.240.10"
-Win10="172.31.2.5"
-
 ip6tables -t nat -F
 ip6tables -t mangle -F
 ip6tables -F
